@@ -1,5 +1,27 @@
 # data_lake_datawarehouse
 Projet académique
+Construire une architecture de traitement de données en temps réel avec ingestion Kafka, stockage Data Lake (JSON), intégration dans un Data Warehouse (MySQL), et exposition via une API Django RESTful.
+
+Fonctionnalités :
+Kafka Producer (simulation de transactions)
+
+Kafka Consumers :
+
+vers Data Lake (fichiers JSON partitionnés par date)
+
+vers Data Warehouse (insertion dans MySQL)
+
+API Django avec endpoints pour :
+
+📊 métriques (top produits, dépenses récentes, etc.)
+
+📂 data lineage & audit
+
+🔁 fonctions avancées (recherche textuelle, repush Kafka, etc.)
+
+Orchestration planifiée avec Apache Beam
+
+Mécanismes de nettoyage automatique et gouvernance
 
 📘 API Documentation – TP3
 L’API expose différents endpoints pour accéder aux métriques, à l’audit du Data Lake et à la recherche textuelle. Elle est construite avec Django REST Framework.
